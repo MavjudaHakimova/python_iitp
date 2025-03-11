@@ -1,8 +1,10 @@
 import click
+
+from . import __version__
+
 from methods.bilinear_interp_increase import bilinear_interpolation
 from methods.bilinear_interp_decrease import bilinear_interpolation_downscale
 
-from . import __version__
 
 @click.command()
 @click.version_option(version=__version__)
